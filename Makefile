@@ -25,7 +25,7 @@ all:$(OUTPUT)
 
 # define the main executable requirements / command
 $(OUTPUT): $(OBJ_FILES) Makefile
-	$(CXX) src/glad.c $(OBJ_FILES) $(LDFLAGS) -o ./bin/$@
+	$(CXX) src/glad.o $(OBJ_FILES) $(LDFLAGS) -o ./bin/$@
 
 # specifies how the object files are compiled from cpp files
 .cpp.o:
